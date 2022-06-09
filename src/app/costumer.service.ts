@@ -1,0 +1,27 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CostumerService {
+
+  constructor() { }
+  public costumers = [
+    {
+      "name":"Rut",
+      "company":"Facebook"
+    },
+    {
+      "name":"Jhones",
+      "company":"Microsoft"
+    },
+    {
+      "name":"Many",
+      "company":"Resideo"
+    }
+  ]
+
+  getCostumers(){
+    return this.costumers;
+  }
+}
